@@ -5,8 +5,8 @@ import { AiOutlineSearch } from "react-icons/ai";
 const Search = () => {
   return (
     <TextInput
-      placeholder="Explore NFTs"
-      icon={<AiOutlineSearch size="30" color="rgba(48,118,234,1)" />}
+      placeholder="Search..."
+      icon={<AiOutlineSearch size="24" color="rgba(255, 255, 255, 0.7)" />}
     />
   );
 };

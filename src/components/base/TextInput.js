@@ -12,16 +12,11 @@ const TextInput = ({width,height, placeholder='default input', icon,type}) => {
         style={{
           width:`${width}`,
           height:`${height}`,
-          background: `radial-gradient(
-                    circle,
-                    rgba(255, 255, 255, 0.05) 0%,
-                    rgba(48,118,234,0.2) 0%,
-                    rgba(255, 255, 255, 0.05) 70%
-                )`,
+          background: `#64646e`,
         }}
       >
-        <input id="search" placeholder={placeholder} type={type}/>
         {icon}
+        <input id="search" placeholder={placeholder} type={type}/>
       </div>
     </div>
   );

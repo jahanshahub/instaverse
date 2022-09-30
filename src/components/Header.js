@@ -1,6 +1,8 @@
 import react, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { useEthers, useEtherBalance } from "@usedapp/core";
+import logo from "../assets/images/logo.png";
+import Search from "./Search";
 
 const Header = () => {
 
@@ -13,16 +15,22 @@ const Header = () => {
     }
 
     return (
-        <div id="header">
-        <Link to='/' id='logo'>NFT Room</Link>
+      <div id="header">
+        <div className="logo-search">
+          <Link to='/' id='logo'>
+            <img width="77px" height="auto" src={logo} alt="INSTAVERSE Logo" />
+          </Link>
+          <Search />
+          {/* <form className="form"><i className="fa fa-search"></i><input className="search" type="search" placeholder="Search..." /></form> */}
+        </div>
 
         <div id="link-containers">
-          <a>Start Hunting</a>
-          <a>Dark NFTs</a>
-          <a>Community</a>
-          <a>Craft NFT</a>
+          <Link to='/home'>Home</Link>
+          <Link to='/explore'>Explore</Link>
+          <Link to='/notification'>Notification</Link>
+          <Link to='/profile'>Profile</Link>
 
-          <button id="connect-wallet" onClick={handleWallet} >{!account ? 'Connect Wallet' : account}</button>
+          <button id="connect-wallet" onClick={handleWallet} >{!account ? 'Connect' : account}</button>
         </div>
       </div>
     );
