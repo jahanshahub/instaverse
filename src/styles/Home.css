@@ -17,20 +17,22 @@ a {
 
 #card-list-header-text {
   color: #ffffff;
-  font-family: "Rock Salt", cursive;
+  /* font-family: "Rock Salt", cursive; */
   font-size: 24px;
   /* margin-top: 80px; */
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-#list-container {
+#collection-container {
   /* border: 1px solid red; */
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content:center;
-  margin: 0px !important;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 48px;
+  margin: 0 140px 100px;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 #upcoming {

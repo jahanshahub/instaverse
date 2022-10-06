@@ -8,7 +8,7 @@ const Explore = () => {
   return (
     <div id="explore">
       <Header />
-      <Search/>
+      {/* <Search/> */}
       <div id="list-container">
         <CardList list={exploreList} />
       </div>

@@ -1,22 +1,22 @@
 .card {
-  margin-top: 50px;
+  /* margin-top: 50px;
   margin-left:15px;
   margin-right: 15px;
-  width: 250px;
+  width: 250px; */
   /* box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); */
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  height: 300px;
-  border-radius: 30px;
-  backdrop-filter: blur(50px);
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  /* height: 300px; */
+  /* border-radius: 30px; */
+  /* backdrop-filter: blur(50px); */
   /* filter:blur(4px); */
-  background: rgb(2, 0, 36);
+  background: transparent;
   /* background: radial-gradient(
     circle,
     rgba(255, 255, 255, 0.05) 0%,
     #00f5c966 0%,
     rgba(255, 255, 255, 0.05) 70%
   ); */
-  padding: 10px;
+  padding: 0px;
   text-align: center;
   object-fit: cover;
   cursor: pointer;
@@ -31,8 +31,8 @@
 .card{
     animation:cardHoverAnimation 1s;
     /* animation-iteration-count: infinite; */
-    
-    
+
+
 }
 
 .card:focus{
@@ -55,9 +55,9 @@
 }
 
 .info-container > p {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+
     text-align: left;
 }
 
@@ -81,8 +81,8 @@
 }
 
 .price-container > p {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
     color:#666c70;
     text-align:left;
 }
@@ -117,8 +117,8 @@
     color:#ffffff;
     border:1px solid #ffffff;
     border-radius: 15px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
     cursor:pointer;
 }
 
@@ -165,12 +165,13 @@
     }
 
     100%{
-        background: radial-gradient(
+        background: transparent;
+        /* background: radial-gradient(
     circle,
     rgba(255, 255, 255, 0.05) 0%,
     rgba(252, 0, 155, 0.425) 0%,
     rgba(255, 255, 255, 0.05) 70%
-  );
+  ); */
     }
 }
 

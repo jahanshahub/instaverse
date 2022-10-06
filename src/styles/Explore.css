@@ -4,5 +4,7 @@
     flex-direction: row;
     align-items: center;
     justify-content:center;
-    margin-bottom: 100px;
+    padding: 32px;
+    margin: 0px !important;
+    background: rgba(0, 0, 0, 0.5);
 }

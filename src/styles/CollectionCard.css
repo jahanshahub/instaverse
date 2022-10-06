@@ -1,0 +1,19 @@
+.collection-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 8px 0;
+    font-size: 16px;
+}
+
+.collection-card:hover {
+    background: rgba(0, 0, 0, 0.4);
+    transition: all 0.5s ease;
+    border-radius: 10px;
+}
+
+.collection-card p {
+    width: 90px;
+}

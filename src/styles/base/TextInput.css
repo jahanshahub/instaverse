@@ -2,6 +2,7 @@
   /* width: 550px;
   height: 30px; */
   display: flex;
+  align-items: center;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   /* border-radius: 30px; */
   backdrop-filter: blur(50px);
@@ -24,8 +25,8 @@
 }
 
 #search {
-  width: 80%;
-  height: 100%;
+  /* width: 80%;
+  height: 100%; */
   border: none;
   background-color: transparent;
   color: #ffffff;
@@ -35,7 +36,11 @@
   padding-left: 20px;
   /* border:1px solid red; */
   /* float: left; */
-  border-radius: 30px;
+  /* border-radius: 30px; */
+}
+
+#search:-internal-autofill-selected {
+  background: rgb(2, 0, 36);
 }
 
 #search:focus {
