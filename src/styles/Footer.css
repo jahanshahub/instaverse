@@ -6,3 +6,12 @@
     background: rgba(0, 0, 0, 0.5);
     padding: 16px 140px;
 }
+
+.social a {
+    margin: 10px;
+}
+
+.social a:hover {
+    color: #390e56;
+    transition: all 0.3s ease;
+}

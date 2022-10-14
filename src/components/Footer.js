@@ -13,8 +13,8 @@ const Footer = () => {
             <h5 style={{"color": "rgba(255, 255, 255, 0.5)"}}>Decentralized Social<br/> Sharing Platform</h5>
             <img width="80px" style={{"margin": "0 90px"}} src={logo} alt="Footer" />
             <div className="social">
-                <Link to="#" style={{"margin": "0"}}><FaTelegramPlane style={{"fontSize": "24px"}} /></Link>
-                <Link to="#" style={{"margin": "0"}}><FiTwitter style={{"fontSize": "24px"}} /></Link>
+                <Link to="#"><FaTelegramPlane style={{"fontSize": "30px"}} /></Link>
+                <Link to="#"><FiTwitter style={{"fontSize": "30px"}} /></Link>
             </div>
         </div>
     );

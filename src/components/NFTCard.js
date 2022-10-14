@@ -6,7 +6,7 @@ import { ColorExtractor } from 'react-color-extractor'
 import Card from "./base/Card";
 import Button from "./base/Button";
 import { Colors } from "../constants/Colors";
-
+import { BsFillHandThumbsUpFill, BsFillHandThumbsDownFill } from 'react-icons/bs';
 
 import { ModelViewerElement } from "@google/model-viewer";
 import { useARStatus } from "../hooks/isARStatus";
@@ -37,28 +37,20 @@ const NFTCard = ({ username, nftName, price, nftSrc, likeCount, gradient, onClic
   return (
     <Card
       blurColor={colors[0]}
-
+      margin="0 0 8px 0"
       child={<>
         {isARSupport ? <model-viewer ar-scale="auto" ar ar-modes="webxr scene-viewer quick-look" id="reveal" loading="eager" camera-controls auto-rotate src={nftSrc} > </model-viewer> : <><ColorExtractor getColors={getColors}>
           <img className="nft-image" src={nftSrc} />
         </ColorExtractor></>}
-        <div className="wrapper">
-          <div className="info-container">
-            <p className="owner"> LEJOURN.DARK.NFT</p>
-            <p className="name">Alien Cry</p>
-          </div>
-
-          <div className="price-container">
+        <div className="price-container d-flex justify-content-between px-2">
             <p className="price-label">Price</p>
             <p className="price">
               {" "}
               <FaEthereum /> 4.555
             </p>
-          </div>
         </div>
-        <div className="buttons">
+        <div className="buttons px-2">
           {/* <button className="buy-now">Buy Now</button> */}
-          <Button color={Colors.buttons.primary} textContent="Buy Now" onClick={onClick} />
           <div className="like-container">
             <button className="like" onClick={like}>
               {!isLike ? (
@@ -75,6 +67,7 @@ const NFTCard = ({ username, nftName, price, nftSrc, likeCount, gradient, onClic
             </button>
             <p className="like-count">123</p>
           </div>
+          <Button color={Colors.buttons.primary} textContent="Buy Now" onClick={onClick} />
         </div>
       </>}>
 

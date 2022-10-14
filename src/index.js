@@ -5,7 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Create from "./pages/Create";
+import Profile from "./pages/Profile";
 import Explore from "./pages/Explore";
 import Notification from "./pages/Notification";
 
@@ -18,7 +18,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<DAppProvider config={{}}><Home /></DAppProvider>} />
         <Route path="/home" element={<DAppProvider config={{}}><Home /></DAppProvider>} />
-        <Route path="/profile" element={<DAppProvider><Create /></DAppProvider>} />
+        <Route path="/profile" element={<DAppProvider><Profile /></DAppProvider>} />
         <Route path="/explore" element={<DAppProvider config={{}}><Explore /></DAppProvider>} />
         <Route path="/detail" element={<DAppProvider config={{}}><NFTDetail /></DAppProvider>} />
         <Route path="/notification" element={<DAppProvider config={{}}><Notification /></DAppProvider>} />

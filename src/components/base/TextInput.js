@@ -16,7 +16,7 @@ const TextInput = ({width,height, placeholder='default input', icon,type}) => {
         }}
       >
         {icon}
-        <input id="search" placeholder={placeholder} type={type}/>
+        <input id="search" placeholder={placeholder} type={type} style={{width: "100%"}} />
       </div>
     </div>
   );

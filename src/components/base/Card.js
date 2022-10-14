@@ -6,6 +6,7 @@ const Card = React.forwardRef(
     {
       // width = "250px",
       // height = "300px",
+      margin,
       child,
       blurColor = "rgba(48,118,234,0.2)",
       onClick,
@@ -23,7 +24,8 @@ const Card = React.forwardRef(
         //         ${blurColor} 0%,
         //         rgba(255, 255, 255, 0.05) 70%
         //       )`,
-        background: `transparent`
+        // background: `transparent`
+        margin: `${margin}`
       }}
       onClick={onClick}
       ref={ref}

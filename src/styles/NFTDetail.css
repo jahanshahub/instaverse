@@ -5,13 +5,16 @@
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    padding-top:50px;
+    padding:50px 0;
 }
 
 #detail-content{
     width:100%;
     height:100%;
     /* border:1px solid red; */
+    width: 1200px;
+    margin: auto;
+    padding: 32px;
     display:flex;
     flex-direction:row;
 }
@@ -100,6 +103,7 @@ p#description{
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
     font-size:18px;
     font-weight: 600;
+    margin-bottom: 0;
 }
 
 .like-container > p.like-count{
@@ -109,12 +113,12 @@ p#description{
     font-weight: 600;
 }
 
-.like-container{
+#detail-controls .like-container{
     display: flex;
     flex-direction: row;
-    margin-right: 10px;
+    margin-bottom: 0px;
     text-align:center;
-    justify-content:center;
+    /* justify-content:center; */
     align-items: center;
 }
 
@@ -175,6 +179,7 @@ p#description{
     #detail-content{
         width:100%;
         height:100%;
+        padding: 16px;
         /* border:1px solid red; */
         display:flex;
         flex-direction:column;

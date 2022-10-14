@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import "../../styles/base/Button.css";
 
 const Button = ({
-  width = "80px",
-  height = "30px",
+  width = "100%",
+  height = "auto",
   color = "#ffffff",
+  borderRadius = "10px",
   onClick,
   textColor = "black",
   textContent = 'Button',
@@ -22,9 +23,12 @@ const Button = ({
         width: `${width}`,
         height: `${height}`,
         color: `${isHover ? textColor : color}`,
-        border: `1px solid ${color}`,
+        borderRadius: `${borderRadius}`,
+        fontSize: '20px',
+        padding: '8px 16px',
+        // border: `1px solid ${color}`,
         transition: "background-color .5 ease-in-out",
-        backgroundColor: isHover ? color : "transparent",
+        backgroundColor: isHover ? color : "#8821bb",
       }}
     >
       {child ? child : textContent}

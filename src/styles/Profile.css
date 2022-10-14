@@ -1,0 +1,59 @@
+#profile {
+    background: #8821bb;
+    padding: 16px;
+    margin: 48px 140px 100px;
+}
+
+.postinput > * {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.post-card {
+    min-height: 96px;
+    position: relative;
+    padding: 24px 64px;
+    background: #bc79e2;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 16px 8px;
+}
+
+.post-card .post-image {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -10px;
+    left: -10px;
+}
+
+.post-image img {
+    top: 0;
+    left: 0;
+}
+
+.post-card .social-button {
+    float: right;
+    position: absolute;
+    right: 16px;
+    bottom: 10px;
+}
+
+.social-button button {
+    background: #8821bb;
+    padding: 2px;
+    border: none;
+    border-radius: 50%;
+}
+
+.showroom h1 {
+    font-size: 52px;
+    font-weight: 600;
+}
+
+.showroom .nfts {
+    background: #808082;
+    border-radius: 24px;
+}
